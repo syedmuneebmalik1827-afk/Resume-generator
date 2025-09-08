@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="resume.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <title>Resume Generator PROJECT</title>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <ul>
+        <li><a href="#personalinfo">1</a></li>
+        <li><a href="#2">2</a></li>
+        <li><a href="#3">3</a></li>
+        <li><a href="#4">4</a></li>
+        <li><a href="#5">5</a></li>
+        </li>
+      </ul>
+    </div>
+    <!-- inputs -->
+
+
+  <div class="left">
+    <form action="">
+
+      <div class="topheading">
+        <div class="topheadingleft"><h1>RESUME GENERATOR</h1>
+        <p>Fill the below form and see live preview of your resume</p>
+      </div>
+        <div class="templatecolors">
+          <p>Choose the template : </p>
+          <button class="c1" >m</button>
+          <button class="c2" >m</button>
+          <button class="c3" >m</button>
+          <button class="c4" >m</button>
+          <button class="c5" >m</button>
+        </div>
+
+      </div>
+
+      <div id="personalinfo">
+      <p class="personalinfoheading">1.Personal Information</p>
+        <div id="heading1" class="inputarea">
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Enter your Full Name">
+        </div>
+        <div id="heading2" class="inputarea">
+          <label for="">Job Role</label>
+          <input type="text" placeholder="Enter your Job Role">
+        </div>
+        <div id="heading3" class="inputarea">
+          <label for="">Contact</label>
+          <input type="text" placeholder="Enter your mobile number">
+        </div>
+        <div id="heading4" class="inputarea">
+          <label for="">Adress</label>
+          <input type="text" placeholder="Enter your address">
+        </div>
+        <div id="heading5" class="inputarea">
+          <label for="">Email</label>
+          <input type="text" placeholder="Enter your email id">
+        </div>
+      </div>
+
+      <div class="personalinfoborder">
+           
+        </div>
+
+<!-- objective -->
+
+      <div class="objective" id="2">
+
+        <p class="personalinfoheading" id="objectiveheading">2.Career Objective</p>
+        
+        <div class="objectiveinput">
+          <label for="">Enter your career objectives</label>
+          <textarea name="" id="" rows="10" cols="43" placeholder="Career objective"></textarea>
+        </div>
+
+      </div>
+
+      <div class="personalinfoborder">
+           
+        </div>
+
+
+        <!-- skills  -->
+         <div class="skills" id="3">
+          <p class="personalinfoheading">3.Skills</p>
+          
+           <div class="skillslist">
+            <div id="skillsinput" class="inputarea">
+            <label for="">Skills</label>
+            <input type="text" placeholder="Enter your Skills" id="skillsinputtext">
+          </div>
+           </div>
+
+          <button class="skillsadd">Add</button>
+          <button class="skillsremove">Remove</button>
+
+         </div>
+
+          <div class="personalinfoborder">
+           
+        </div>
+
+        <!-- skills end here -->
+
+        <!-- Education -->
+         <div class="education" id="4">
+          <p class="personalinfoheading">4.Educational Background</p>
+          <div class="eduinput">
+            <div class="objectiveinput">
+          <label for="">Educational Background</label>
+          <textarea name="" id="" rows="10" cols="43" placeholder="Describe your Educational Background with all the neccassary information"></textarea>
+        </div>
+          </div>
+         </div>
+
+          <div class="personalinfoborder">
+           
+        </div>
+
+        <!-- workex -->
+
+        <div class="workex" id="5">
+
+           <p class="personalinfoheading">5.Work Experience</p>
+
+
+          <div class="workexinputdiv">
+          <div class="objectiveinput" id="workextextareaparent">
+          <label for="">Work Experience</label>
+          <textarea name="" id="" rows="10" cols="43" placeholder="Describe your Work Experience in industry"></textarea>
+        </div>
+          </div>
+           <!-- <button class="workexadd">Add</button> -->
+
+        </div>
+
+         <div class="personalinfoborder" id="lastborder">
+           
+        </div>
+
+
+        <div class="resetdiv">
+          <div class="resetbuttonparent">
+            <p>Click this button to reset all inputs</p>
+            <button class="resetbutton">Reset</button>
+          </div>
+        </div>
+    </form>
+  </div> 
+
+
+  <!-- preview -->
+  <div class="right">
+    <div class="pheader">
+      <h1>Live Preview</h1>
+    </div>
+    <div class="preview">
+      <div class="ptop">
+        <div class="ptopleft">
+          <div class="pname">Full Name</div>
+        <div class="prole">Job Role</div>
+        </div>
+        
+
+
+        <div class="about">
+          
+          <div class="pcontact">123456789</div>
+          <div class="paddress">City, State, Country</div>
+          <div class="pemail">xyzabcpqr123@gmail.com</div>
+
+      </div>
+
+      </div>
+      <div class="pbody">
+
+        <!-- preview of objective -->
+        <div class="pobjective">
+          <div class="pobjectiveheader">
+            <p><img src="careeroriginal.png" class="plogo">     Career Objective -</p>
+          </div>
+          <p class="pobjectivetextarea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ullam eligendi suscipit earum dolor a mollitia in. Laborum provident, magnam repudiandae odit numquam unde eos dolor aperiam consequuntur ab nobis vitae molestiae quo, delectus cum, vero a tenetur nostrum debitis.</p>
+        </div>
+
+        <!-- preview of skills -->
+          <div class="pobjective" id="pskills">
+          <div class="pobjectiveheader" id="pskillsheader">
+            <p><img src="skillsoriginal.png" class="plogo">     Skills -</p>
+          </div>
+          <!-- <p class="pobjectivetextarea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ullam eligendi suscipit earum dolor a mollitia in. Laborum provident, magnam repudiandae odit numquam unde eos dolor aperiam consequuntur ab nobis vitae molestiae quo, delectus cum, vero a tenetur nostrum debitis.</p> -->
+
+          <ul class="pobjectivetextarea">
+            <div class="rightskills">
+            <li id="skill1">Some Skill</li>
+            <li id="skill2">Some Skill</li>
+            <li id="skill3">Some Skill</li>
+            <li id="skill4">Some Skill</li>
+            </div>
+            <div class="leftskills">
+            <li id="skill5">Some Skill</li>
+            <li id="skill6">Some Skill</li>
+            <li id="skill7">Some Skill</li>
+            <li id="skill8">Some Skill</li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- education -->
+
+        <div class="pobjective" id="peducation">
+          <div class="pobjectiveheader" id="eduheader">
+            <p><img src="educationoriginal.png" class="plogo">     Educational Background -</p>
+          </div>
+          <p id="peduinputtextarea" class="pobjectivetextarea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ullam eligendi suscipit earum dolor a mollitia in. Laborum provident, magnam repudiandae odit numquam unde eos dolor aperiam consequuntur ab nobis vitae molestiae quo, delectus cum, vero a tenetur nostrum debitis. </p>
+        </div>
+
+        <!-- workex -->
+         <div class="pobjective" id="pworkex">
+          <div class="pobjectiveheader" id="workexheader">
+            <p><img src="workexblack.png" class="plogo">     Work Experience -</p>
+          </div>
+         <!-- <ul class="pobjectivetextarea" >
+            <div class="rightskills">
+            <li id="pworkex1">Job Role</li>
+            <li id="pworkex2">Company</li>
+            <li id="pworkex3">Start and End date</li>
+            <li id="pworkex4">Location</li>
+            </div>
+            <div class="leftskills">
+            <li id="pworkex5">Job Role</li>
+            <li id="pworkex6">Company</li>
+            <li id="pworkex7">Start and End date</li>
+            <li id="pworkex8">Location</li>
+            </div>
+          </ul> -->
+          <p class="pobjectivetextarea" id="pworkextextarea">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ullam eligendi suscipit earum dolor a mollitia in repudiandae odit numquam unde eos dolor aperiam consequuntur ab nobis vitae molestiae quo, destrum. <br><br> Vivamus pulvinar hendrerit justo. Maecenas quis vulputate mi, at blandit turpis. Phasellus non feugiat diam.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+      <button class="printbtn">Print</button>
+    </div>
+
+  </div>
+
+<div class="resetinterface">
+      <div class="content">
+        <div class="resetheading">
+          Do you want to reset all inputs?
+        </div>
+       <div class="resetbuttonslist">
+         <div class="resetyes"><button>Yes</button></div>
+        <div class="resetno"><button>No</button></div>
+       </div>
+      </div>
+    </div>
+
+</body>
+<script src="resume.js"></script>
+</html>
