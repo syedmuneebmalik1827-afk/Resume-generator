@@ -148,45 +148,28 @@ peduinput.innerHTML = eduinput.value || "Lorem ipsum dolor sit, amet consectetur
 
 
 
-//reset
+//reset values
+
 let resetbutton = document.querySelector('.resetbutton');
-resetbutton.addEventListener('click', function(e){
-
-//popen popup on reset click
-
+let resetyes = document.querySelector('.resetyes button');
+let resetno = document.querySelector('.resetno button');
 let resetinterface = document.querySelector('.resetinterface');
-resetinterface.style.position = "fixed";
-resetinterface.style.height = "100vh";
-resetinterface.style.opacity = "1";
-let body = document.querySelector('body');
-body.style.overflow = "hidden";
 
+resetbutton.addEventListener('click', function(e){
   e.preventDefault();
-
+    resetinterface.style.display = 'flex';
 })
 
-let resetyes = document.querySelector('.resetyes');
-let resetno = document.querySelector('.resetno');
 resetyes.addEventListener('click', function(e){
   e.preventDefault();
+  resetinterface.style.display='none';
   resetvaluesofinput();
-  let resetinterface = document.querySelector('.resetinterface');
-  resetinterface.style.position = "fixed";
-  resetinterface.style.height = "0vh";
-  resetinterface.style.opacity = "0";
-  let body = document.querySelector('body');
-body.style.overflow = "scroll";
 })
-
 resetno.addEventListener('click', function(e){
   e.preventDefault();
-  let resetinterface = document.querySelector('.resetinterface');
-  resetinterface.style.position = "fixed";
-  resetinterface.style.height = "0vh";
-  resetinterface.style.opacity = "0";
-  let body = document.querySelector('body');
-body.style.overflow = "scroll";
+  resetinterface.style.display='none';
 })
+
 
 /*reset interface ends*/
 
@@ -213,15 +196,18 @@ function c4func()
 document.querySelector('.topheadingleft p').style.color = '#4CAF50';
 document.querySelector('.ptop').style.background = " linear-gradient(90deg, #5A7D32, #6B8E23)";
 document.querySelector('.printbtn').style.background = " linear-gradient(90deg, #5A7D32, #6B8E23)";
-document.querySelector('.nav').style.background = "#5E6D57";
+document.querySelector('.nav').style.background = "#4E8C33";
 document.querySelector('.templatecolors p').style.color = "#6b8e23";
 document.querySelector('.resetyes button').style.backgroundColor = "#1B5E20";
 document.querySelector('.resetbutton').style.backgroundColor = "#1B5E20";
 document.querySelector('.skillsadd').style.backgroundColor = "#1B5E20";
+document.querySelector('.closeowner').style.background = '#1b5e20';
+document.querySelector('.ownercontenttext').style.color = '#333';
 
 
 
 document.querySelector('.skillsremove').style.color = "#1B5E20";
+document.querySelector('.ownercontent').style.color = "#1B5E20";
 
 document.querySelector('.skillsremove').addEventListener('mouseenter', function(e){
     e.target.style.backgroundColor = "#1B5E20";
@@ -278,6 +264,7 @@ document.querySelector('.templatecolors p').style.color = "#0B3D91";
 document.querySelector('.resetyes button').style.backgroundColor = "#34495E";
 document.querySelector('.resetbutton').style.backgroundColor = "#34495E";
 document.querySelector('.skillsadd').style.backgroundColor = "#34495E";
+document.querySelector('.closeowner').style.backgroundColor = "#34495E";
 
 
 
@@ -317,59 +304,61 @@ document.querySelectorAll('textarea').forEach(function(elem){
 function c2func()
 {
 
- document.querySelector('.topheadingleft h1').style.color = 'crimson';
+ document.querySelector('.topheadingleft h1').style.color = '#FF5C8D';
  document.querySelectorAll('.personalinfoheading').forEach(function(elem){
-    elem.style.color = 'crimson'    
+    elem.style.color = '#FF5C8D'    
 });
  document.querySelectorAll('.personalinfoborder').forEach(function(elem){
-    elem.style.borderBottom = '4px solid rgba(220, 20, 60, 0.3)';
+    elem.style.borderBottom = '4px solid rgba(255, 182, 193, 0.3) ';
     
 });
 
 document.querySelector('.topheadingleft p').style.color = '#E34C8C';
-document.querySelector('.ptop').style.background = "linear-gradient(90deg, #91103F, #C33B6C)";
-document.querySelector('.printbtn').style.background = " linear-gradient(90deg, #91103F, #C33B6C)";
-document.querySelector('.nav').style.background = "#6A3B4F";
-document.querySelector('.templatecolors p').style.color = "crimson";
+document.querySelector('.ptop').style.background = "linear-gradient(90deg, #FF7FA9 0%, #FF5C8D 100%)";
+document.querySelector('.printbtn').style.background = " linear-gradient(90deg, #FF7FA9 0%, #FF5C8D 100%)";
+document.querySelector('.nav').style.background =" #F06292";
+document.querySelector('.templatecolors p').style.color = "#FF7A9C";
 
-document.querySelector('.resetyes button').style.backgroundColor = "#5E1A34";
-document.querySelector('.resetbutton').style.backgroundColor = "#5E1A34";
-document.querySelector('.skillsadd').style.backgroundColor = "#5e1a34";
-document.querySelector('.skillsadd').style.border = "2px solid #5e1a34";
-document.querySelector('.skillsremove').style.border = "2px solid #5e1a34";
+document.querySelector('.resetyes button').style.backgroundColor = "#F06292";
+document.querySelector('.resetbutton').style.backgroundColor = "#F06292";
+document.querySelector('.skillsadd').style.backgroundColor = "#F06292";
+document.querySelector('.skillsadd').style.border = "2px solid #F06292";
+document.querySelector('.skillsremove').style.border = "2px solid #F06292";
+// document.querySelector('.closeowner').style.background = "2px solid #F06292";
+document.querySelector('.closeowner').style.background = '#f06292'
 
 
-document.querySelector('.skillsremove').style.color = "#5E1A34";
+document.querySelector('.skillsremove').style.color = "#F06292";
 
 document.querySelector('.skillsremove').addEventListener('mouseenter', function(e){
-    e.target.style.backgroundColor = "#5E1A34";
+    e.target.style.backgroundColor = "#F06292";
     e.target.style.color = "white";
-    e.target.style.border = '2px solid #5E1A34';
+    e.target.style.border = '2px solid #F06292';
 })
 
 document.querySelector('.skillsremove').addEventListener('mouseleave', function(e){
     e.target.style.backgroundColor = "white";
-    e.target.style.color = '#5E1A34';
-    e.target.style.border = '2px solid #5E1A34';
+    e.target.style.color = '#F06292';
+    e.target.style.border = '2px solid #F06292';
 })
 
 document.querySelector('.skillsadd').addEventListener('mouseenter', function(e){
     e.target.style.backgroundColor = "white";
-    e.target.style.color = '#5E1A34';
-    e.target.style.border = "2px solid #5E1A34";
+    e.target.style.color = '#F06292';
+    e.target.style.border = "2px solid #F06292";
 })
 
 document.querySelector('.skillsadd').addEventListener('mouseleave', function(e){
-    e.target.style.backgroundColor = "#5E1A34";
-    e.target.style.border = "#5E1A34";
+    e.target.style.backgroundColor = "#F06292";
+    e.target.style.border = "#F06292";
     e.target.style.color = "white";
 })
 
 document.querySelectorAll('input').forEach(function(elem){
-    elem.style.border = '2px solid crimson';
+    elem.style.border = '2px solid #FF5C8D';
 })
 document.querySelectorAll('textarea').forEach(function(elem){
-    elem.style.border = '2px solid crimson';
+    elem.style.border = '2px solid #FF5C8D';
 })
 // document.querySelectorAll('.personalinfoborder').forEach(function(elem){
 //     elem.style.background = 'rgba(107, 142, 35, 0.3)';
@@ -392,11 +381,12 @@ function c3func()
 document.querySelector('.topheadingleft p').style.color = '#9C27B0';
 document.querySelector('.ptop').style.background = " linear-gradient(90deg, #6A1B9A, #7E57C2)";
 document.querySelector('.printbtn').style.background = " linear-gradient(90deg, #6A1B9A, #7E57C2)";
-document.querySelector('.nav').style.background = "#6A5D7B";
+document.querySelector('.nav').style.background = "#8C79A8";
 document.querySelector('.templatecolors p').style.color = "#9C27B0";
 document.querySelector('.resetyes button').style.backgroundColor = "#4A148C";
 document.querySelector('.resetbutton').style.backgroundColor = "#4A148C";
 document.querySelector('.skillsadd').style.backgroundColor = "#4A148C";
+document.querySelector('.closeowner').style.backgroundColor = "#4A148C";
 
 
 
@@ -458,6 +448,8 @@ document.querySelector('.resetyes button').style.backgroundColor = "#8B6F1B";
 document.querySelector('.resetbutton').style.backgroundColor = "#8B6F1B";
 document.querySelector('.skillsadd').style.backgroundColor = "#8B6F1B";
 document.querySelector('.skillsadd').style.border = "2px solid #8B6F1B";
+document.querySelector('.closeowner').style.background = '#8b6f1b';
+document.querySelector('.ownercontenttext').style.color = 'black';
 
 
 
@@ -606,3 +598,24 @@ document.querySelectorAll('.templatecolors button').forEach(function(elem){
 })
 
 /* color change on hover ends*/
+
+
+//owner
+
+
+let ownerbtn = document.querySelector('.ownerbtn');
+let owner = document.querySelector('.owner');
+let cross = document.querySelector('.closeowner');
+
+ownerbtn.addEventListener('click', function(e){
+  owner.style.display = 'flex';
+  // owner.style.display = 'fixed';
+})
+
+
+cross.addEventListener('click', function(e){
+  // e.preventDefault();
+  owner.style.display = 'none';
+  console.log('hello');
+  
+})
