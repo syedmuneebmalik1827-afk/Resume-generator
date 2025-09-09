@@ -418,6 +418,10 @@ textarea{
     width: 60%;
 }
 
+#skillsbottom{
+    margin-bottom: -1%;
+}
+
 /* education starts */
 
 .education{

@@ -3,7 +3,7 @@
   let name = document.querySelector('#heading1 input');
   let pname = document.querySelector('.pname');
   name.addEventListener('input', function(e){
-    pname.innerHTML = name.value || "Name";
+    pname.innerHTML = name.value || "Full Name";
   })
 
   let jobrole = document.querySelector('#heading2 input');
@@ -20,7 +20,7 @@
   let address = document.querySelector('#heading4 input');
   let paddress = document.querySelector('.paddress');
   address.addEventListener('input', function(e){
-    paddress.innerHTML = address.value || "City";
+    paddress.innerHTML = address.value || "City, Country";
   })
   let email = document.querySelector('#heading5 input');
   let pemail = document.querySelector('.pemail');
