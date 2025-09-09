@@ -264,6 +264,7 @@ document.querySelector('.templatecolors p').style.color = "#0B3D91";
 document.querySelector('.resetyes button').style.backgroundColor = "#34495E";
 document.querySelector('.resetbutton').style.backgroundColor = "#34495E";
 document.querySelector('.skillsadd').style.backgroundColor = "#34495E";
+document.querySelector('.skillsremove').style.border = "2px solid #34495E";
 document.querySelector('.closeowner').style.backgroundColor = "#34495E";
 
 
@@ -272,22 +273,29 @@ document.querySelector('.skillsremove').style.color = "#34495E";
 
 document.querySelector('.skillsremove').addEventListener('mouseenter', function(e){
     e.target.style.backgroundColor = "#34495E";
+e.target.style.border = "2px solid #34495E";
+
     e.target.style.color = "white";
 })
 
 document.querySelector('.skillsremove').addEventListener('mouseleave', function(e){
     e.target.style.backgroundColor = "white";
+e.target.style.border = "2px solid #34495E";
+
     e.target.style.color = '#34495E';
 })
 
 document.querySelector('.skillsadd').addEventListener('mouseenter', function(e){
     e.target.style.backgroundColor = "white";
+    e.target.style.border = '2px solid #34495e';
     e.target.style.color = '#34495E';
 })
 
 document.querySelector('.skillsadd').addEventListener('mouseleave', function(e){
    e.target.style.backgroundColor = "#34495E";
     e.target.style.color = "white";
+e.target.style.border = "2px solid #34495E";
+
 })
 
 document.querySelectorAll('input').forEach(function(elem){
